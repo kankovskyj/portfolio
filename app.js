@@ -24,7 +24,7 @@ const projects = [
         id: 4
       },
       {
-        name: "PELMET.EU",
+        name: "PELMETfsefsfsf d.EU",
         id: 4
       }
   ]
