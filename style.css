@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Kiona";
+  src: url(font/Kiona-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lora Bold";
+  src: url(font/Lora-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Lora Regular";
+  src: url(font/Lora-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.landing {
+  width: 85%;
+  height: 90vh;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lora Regular";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: auto;
+}
+
+.landing .header .logo-wrapper .logo {
+  font-size: 5.5rem;
+  font-family: "Kiona";
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+  margin-left: -6px;
+}
+
+.landing .header .logo-wrapper h1 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.landing .header .hamburger {
+  width: 3.4rem;
+  height: 5px;
+  border-bottom: 3px solid #071B31;
+  border-top: 3px solid #071B31;
+}
+
+.landing .video-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25vh;
+}
+
+.landing .video-block .video-wrapper {
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .video-block .video-wrapper .bars {
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.landing .video-block .video-wrapper .bars .bar {
+  width: 79.2px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: #071B31;
+  opacity: 0.5;
+}
+
+.landing .video-block .video-wrapper .bars .bar.selected {
+  opacity: 1;
+}
+
+.landing .video-block .description-wrapper {
+  z-index: 1;
+  margin-left: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .video-block .description-wrapper .timer {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/cirque.svg);
+}
+
+.landing .video-block .description-wrapper h2 {
+  font-family: "Kiona";
+  font-size: 1.8rem;
+}
+
+.landing .video-block .description-wrapper p {
+  font-family: "Lora Regular";
+  font-size: 1.25rem;
+  margin-top: 0.7rem;
+  width: 60%;
+}
+
+.landing .video-block .description-wrapper .controls-wrapper {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: auto;
+}
+
+.landing .bottom .arrow-down {
+  width: 50px;
+}
+
+.landing .bottom .project-slider {
+  font-size: 1.8rem;
+  height: 5.5rem;
+  overflow: scroll;
+  line-height: 1.8rem;
+  font-family: "Kiona";
+}
+
+.landing .bottom .project-slider .overlay-top {
+  position: fixed;
+  top: 82vh;
+  right: 0;
+  width: 20%;
+  height: 2rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  pointer-events: none;
+}
+
+.landing .bottom .project-slider .overlay-bottom {
+  position: fixed;
+  top: 89vh;
+  right: 0;
+  width: 20%;
+  height: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  pointer-events: none;
+}
+
+.landing .bottom ::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
